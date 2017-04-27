@@ -1,0 +1,19 @@
+{
+  "name": "revealjs_addons",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guillaumebarranco/revealjs_addons.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guillaumebarranco/revealjs_addons/issues"
+  },
+  "homepage": "https://github.com/guillaumebarranco/revealjs_addons#readme"
+}
