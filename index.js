@@ -10,6 +10,27 @@ socket.on('connect', function() {
 		});
 	});
 
+	$('a[data-lightbox]').on('click', function() {
+		console.log('ouiok');
+		socket.emit('lightbox', $(this).attr('href'));
+	});
+
+	$('#lightbox .lb-close').on('click', function() {
+		socket.emit('close_lightbox');
+	});
+
+	socket.on('close_lightbox', function() {
+		$('#lightbox .lb-close').click();
+	});
+
+	socket.on('lightbox', function(data) {
+
+		if($('#lightboxOverlay').css('display') === 'none') {
+			console.log('received', data);
+			$('a[href="'+data+'"]').click();
+		}
+	});
+
 	socket.on('slide', function(data) {
 		Reveal.slide(data.indexh, data.indexv);
 	});
