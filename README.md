@@ -7,3 +7,12 @@ This repository is to match with [https://github.com/guillaumebarranco/revealjs_
 ### Addons
 	Websocket when slide changed => Allow use to move slides from his smartphone and change it in live on screen (exemple)
 	Websocket on lightbox open/close
+
+### Usage
+	npm install revealjs_ws_server
+
+There is how to implement it in your Reveal.js presentation. Just add these script tags in your html.
+
+### Scripts
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.1/socket.io.js"></script>
+	<script src="node_modules/revealjs_ws_server/index.js"></script>
